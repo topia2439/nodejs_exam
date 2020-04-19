@@ -1,0 +1,26 @@
+{
+  "name": "01.hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hangjongnoh/nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hangjongnoh/nodejs/issues"
+  },
+  "homepage": "https://github.com/hangjongnoh/nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.5.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0"
+  }
+}
