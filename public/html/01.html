@@ -1,0 +1,46 @@
+<script>
+    /*변수 선언 */
+    /* ...(spread operator), map(), filter() */
+    var a = 10;
+    let b = 20; // 변수 중복 선언 불가
+
+    const c = [1, 2, 3]; // const 는 상수 선언
+    const d = [0, ...c, 4];
+    console.log(c, d);
+
+    const f = [1, 2, 3, 4, 5].map(function(v) {
+        return v * v;
+    });
+    console.log(f);
+
+    const users = [{
+        id: 1,
+        name: "홍길동",
+        age: 25,
+        gender: "M"
+    }, {
+        id: 1,
+        name: "홍길만",
+        age: 28,
+        gender: "M"
+    }, {
+        id: 1,
+        name: "홍길동",
+        age: 30,
+        gender: "F"
+    }, {
+        id: 1,
+        name: "홍길동",
+        age: 42,
+        gender: "M"
+    }, {
+        id: 1,
+        name: "홍길동",
+        age: 21,
+        gender: "F"
+    }];
+    const user20 = users.filter(function(v) {
+        if (v.age < 30 && v.age >= 20) return v;
+    });
+    console.log(user20);
+</script>

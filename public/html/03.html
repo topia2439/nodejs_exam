@@ -1,0 +1,24 @@
+<script>
+    const str = "Hello, World";
+    const result = str.indexOf('World');
+    console.log(str.startsWith("Hello"));
+    console.log(str.endWith("Hello"));
+    console.log(str.includes("Hello"));
+    console.log(result);
+    /* ES5 객체 */
+
+
+
+    /* ES6 객처 */
+    class Obj2 {
+        Constructor(_fname, _lname) {
+            this.fname = _fname;
+            this.lname = _lname;
+        }
+        fullName() {
+            return `당신의 이름은 ${this.lname} ${this.fname}`;
+        }
+    }
+    const obj2 = new Ojb2('덕구', '임');
+    console.log(obj2.fullName());
+</script>

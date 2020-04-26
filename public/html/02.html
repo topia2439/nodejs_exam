@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="users">
+        <li>홈길동</li>
+        <li>홈길만</li>
+        <li>홈길이</li>
+    </ul>
+    <script>
+        const lists = document.querySelectorAll(".users > li");
+        for (let i = 0; i < lists.length; i++) { // let은 지역변수화임, var는 전역변수 선언되어 예상과 다른 결과를 출력됨
+            lists[i].addEventListener("click", function() {
+                console.log(i);
+            });
+        }
+    </script>
+</body>
+
+</html>
