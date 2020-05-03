@@ -38,11 +38,11 @@ app.get("/param/:name", function(req, res, next) {
     var name = req.params.name;
     res.send('<h1>Hello World' + name + '</h1>')
 });
-app.get("/pug", (req, res, next) => {
+app.get("/", (req, res, next) => {
     const user = [
-        { id: 1, name: "홍길동" },
-        { id: 2, name: "홍길순" },
-        { id: 3, name: "홍길만" },
+        { id: 1, title: "About", link: "#" },
+        { id: 2, title: "", link: "#" },
+        { id: 3, title: "홍길만", link: "#" },
     ];
     const title = "pug로 만든 페이지 입니다.";
     const headTitle = "pug 폐이지";

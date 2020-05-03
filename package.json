@@ -1,27 +1,29 @@
 {
-  "name": "01.hello",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hangjongnoh/nodejs.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hangjongnoh/nodejs/issues"
-  },
-  "homepage": "https://github.com/hangjongnoh/nodejs#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "jquery": "^3.5.0",
-    "lodash": "^4.17.15",
-    "moment": "^2.24.0",
-    "pug": "^2.0.4"
-  }
+    "name": "01.hello",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "supervisor app",
+        "dev": "node 02.app",
+        "build": "pm2 start app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hangjongnoh/nodejs.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hangjongnoh/nodejs/issues"
+    },
+    "homepage": "https://github.com/hangjongnoh/nodejs#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "jquery": "^3.5.0",
+        "lodash": "^4.17.15",
+        "moment": "^2.24.0",
+        "pug": "^2.0.4"
+    }
 }
